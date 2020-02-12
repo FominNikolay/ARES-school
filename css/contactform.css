@@ -25,6 +25,7 @@
 }
 .cont-contact .contact-form input,
 .cont-contact .contact-form textarea {
+  margin: 20px 0px;
   border: 1px solid #808080;
   font-size: 1vw;
   padding: 10px 0;

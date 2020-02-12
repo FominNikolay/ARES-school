@@ -257,6 +257,7 @@ a:active{
     grid-column-end: 3;
     text-align: center;
     font-size: 1vw;
+    min-width: 200px;
 }
 .footer p {
     margin: 5% 0% 2% 0%;
