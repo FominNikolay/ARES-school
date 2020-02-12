@@ -41,13 +41,12 @@
 }
 
 .items {
-  padding-left: 20px;
+  padding-left: 10px;
   letter-spacing: 3px;
 }
 
 .head {
   margin-top: 5%;
-  margin-left:2%;
   font-size: 1.5vw;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
@@ -62,10 +61,9 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .cart-text {
   margin-top: 5%;
-  margin-left: 2%;
+  padding-right: 2%;
   font-size: 1.2vw;
   opacity: 0;
   -webkit-transform: translateY(40px);
