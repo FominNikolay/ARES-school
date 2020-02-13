@@ -13,6 +13,7 @@ body {
     display: none;
     -webkit-box-pack: center;
             justify-content: center;
+    max-height: 60vw; 
   }
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
