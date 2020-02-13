@@ -39,7 +39,7 @@ function sendForm() {
     let email = document.querySelector('#email').value;
     let userQuestion = document.querySelector('#userQuestion').value;
     const token = "1008832702:AAFPEjEQAGNyPKYDf3ySndlfuSNihqPvV4A";
-    const chatId = "-1001494143816";
+    const chatId = "-1001454608367";
     let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=`;
 
     let xhttp = new XMLHttpRequest();
