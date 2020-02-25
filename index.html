@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="dPylxSWgoDMjtrmrXe6nCZ1ps1EpNTXo09igEx54uZg" />
+    <meta name="keywords"
+        content="боевые искусства киев,школа,спорт,обучение,джиу-джитсу,рукопашный бой, боевое самбо,клуб единоборств в киеве">
     <meta name="description"
-        content="Тренировки различных боевых искусств в Киеве | Рядом с метро  ➤ ARES combat club: Джиу Джитсу, Рукопашный бой, Боевое самбо! Записывайтесь к нам! В школе есть группы как для новичков, так и для опытных бойцов!">
+        content="Тренировки различных боевых искусств в Киеве | Рядом с метро  ➤ ARES combat club: Джиу-Джитсу, Рукопашный бой, Боевое самбо! Записывайтесь к нам! В школе есть группы как для новичков, так и для опытных бойцов!">
     <title>ARES - школа боевых искусств</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -24,50 +26,89 @@
         </div>
     </div>
     <div class="up"><a href=".header"><button class="up-button"></button></a></div>
+    <div id="menuToggle">
+        <div class="close-menu-img"><img src="./img/closemenu.png" alt="close menu"></div>
+        <ul id="menu">
+            <a href=".header">
+                <li>Главная</li>
+            </a>
+            <a href=".about">
+                <li>О школе</li>
+            </a>
+            <a href=".about-cards">
+                <li>Направления</li>
+            </a>
+            <a href=".schedule">
+                <li>Расписание</li>
+            </a>
+            <a href=".section-masters">
+                <li>Наши тренеры</li>
+            </a>
+            <a href=".gallery">
+                <li>Галерея</li>
+            </a>
+            <a href=".contacts">
+                <li>Контакты</li>
+            </a>
+        </ul>
+    </div>
     <div class="wrapper">
         <div class="header">
-            <nav>
-                <ul>
-                    <a href=".header">
-                        <li>Главная</li>
+            <nav role="navigation">
+                <div class="toogle">
+                    <div class="open-menu-img"> <img src="./img/openmenu.png" alt="open menu"></div>
+                    <a id="toogle-header-phone" href="tel:+380509942493">
+                        <span>+380509942493</span>
                     </a>
-                    <a href=".about">
-                        <li>О школе</li>
-                    </a>
-                    <a href=".about-cards">
-                        <li>Направления</li>
-                    </a>
-                    <a href=".schedule">
-                        <li>Расписание</li>
-                    </a>
-                    <a href=".section-masters">
-                        <li>Наши тренеры</li>
-                    </a>
-                    <a href=".gallery">
-                        <li>Галерея</li>
-                    </a>
-                    <a href=".contacts">
-                        <li>Контакты</li>
-                    </a>
-                    <a id="header-phone" href="tel:380509942493">
-                        <li>+380509942493</li>
-                    </a>
-                </ul>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <a href=".header">
+                            <li>Главная</li>
+                        </a>
+                        <a href=".about">
+                            <li>О школе</li>
+                        </a>
+                        <a href=".about-cards">
+                            <li>Направления</li>
+                        </a>
+                        <a href=".schedule">
+                            <li>Расписание</li>
+                        </a>
+                        <a href=".section-masters">
+                            <li>Наши тренеры</li>
+                        </a>
+                        <a href=".gallery">
+                            <li>Галерея</li>
+                        </a>
+                        <a href=".contacts">
+                            <li>Контакты</li>
+                        </a>
+                        <a id="header-phone" href="tel:+380509942493">
+                            <span>
+                                <li>+380509942493</li>
+                            </span>
+                        </a>
+                    </ul>
+                </div>
             </nav>
             <div class="logo">
                 <img src="./img/logo.png" alt="AresSchoolLogo">
                 <div class="logo-text">
-                    <p> ШКОЛА ЕДИНОБОРСТВ "АРЕС" </p>
-                    <p>ЛУЧШИЕ ЕДИНОБОРСТВА </p>
-                    <p>ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ</p>
-                    <p>ТРЕНИРУЙТЕСЬ С ЛУЧШИМИ - СТАНОВИТЕСЬ ЛУЧШИМИ!</p>
+                    <h1>
+                        <p>ШКОЛА ЕДИНОБОРСТВ "АРЕС"</p>
+                        <p>ЛУЧШИЕ ЕДИНОБОРСТВА </p>
+                        <p>ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ</p>
+                        <p>ТРЕНИРУЙТЕСЬ С ЛУЧШИМИ - СТАНОВИТЕСЬ ЛУЧШИМИ!</p>
+                    </h1>
                 </div>
             </div>
         </div>
-        <div class="form revealator-slideup">
+        <div class="form">
             <div class="cont-contact">
                 <div class="question">
-                    <h1>Вы хотите, чтобы мы связались с Вами?</h1>
+                    <h2>Вы хотите, чтобы мы связались с Вами?</h2>
                     <p>Просто отправьте нам запрос, и мы Вам перезвоним</p>
                 </div>
                 <div class="contact-form">
@@ -80,11 +121,11 @@
                 </div>
             </div>
         </div>
-        <div class="about revealator-slideup">
+        <div class="about">
             <div class="about-content">
-                <h1>
+                <h2>
                     О нашей школе:
-                </h1>
+                </h2>
                 <div class="about-text">
                     <p>
                         КЛУБ ЕДИНОБОРСТВ ARES В КИЕВЕ. <br>
@@ -136,9 +177,9 @@
                 </div>
             </div>
             <div class="about-cards">
-                <h1>
+                <h2>
                     Записаться в секции можно по следующим направлениям:
-                </h1>
+                </h2>
                 <div class="container-card">
                     <div class="cards bg1">
                         <div class="overlay">
@@ -190,10 +231,10 @@
             </div>
         </div>
         <div class="section-masters">
-            <h1>Наши Тренеры</h1>
+            <h2>Наши Тренеры</h2>
             <div class="masters">
                 <div class="master">
-                    <h2>Фомин Николай Борисович</h2><br>
+                    <h3>Фомин Николай Борисович</h3><br>
                     <div class="master-content">
                         <img src="./img/Fomin.jpeg" alt="Fomin Nikolay">
                         <ul>
@@ -208,7 +249,7 @@
                     </div>
                 </div>
                 <div class="master">
-                    <h2>Иванов Олег Анатольевич</h2><br>
+                    <h3>Иванов Олег Анатольевич</h3><br>
                     <div class="master-content">
                         <img src="./img/ivanov.jpg" alt="Ivanov Oleg">
                         <ul>
@@ -220,211 +261,212 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="schedule">
-        <h1>Расписание</h1>
-        <div class="schedule-container">
-            <div class="schedule-container-item">
-                <h4>Героев Днепра:</h4>
-                <p class="day">Вторник:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
+        <div class="schedule">
+            <h2>Расписание</h2>
+            <div class="schedule-container">
+                <div class="schedule-container-item">
+                    <h4>Героев Днепра:</h4>
+                    <p class="day">Вторник:
+                        <p>18.00-20.00 младшая и средняя группа.</p>
+                        <p>20.00-22.00 старшая группа.</p>
+                    </p>
+                    <p class="day">Четверг:
+                        <p>18.00-20.00 младшая и средняя группа.</p>
+                        <p>20.00-22.00 старшая группа.</p>
+                    </p class="day">
+                    <p class="day">Суббота:
+                        <p>10.00-12.00 младшая и
+                            средняя группа.</p>
+                        <p> 12.00-14.00 старшая группа.</p>
+                    </p class="day">
+                </div>
+                <div class="schedule-container-item">
+                    <h4>Троещина:</h4>
+                    <p class="day">Понедельник:
+                        <p>17.00-18.30 младшая группа.</p>
+                        <p>18.30-20.00 средняя группа.</p>
+                        <p>20.00-21.30 старшая группа.</p>
+                    </p class="day">
+                    <p class="day">Среда:
+                        <p>17.00-18.30 младшая группа.</p>
+                        <p>18.30-20.00 средняя группа.</p>
+                        <p>20.00-21.30 старшая группа.</p>
+                    </p class="day">
+                    <p class="day">Пятница:
+                        <p>17.00-18.30 младшая группа.</p>
+                        <p>18.30-20.00 средняя группа.</p>
+                        <p>20.00-21.30 старшая группа.</p>
+                    </p class="day">
+                </div>
+                <div class="schedule-container-item">
+                    <h4>Оболонский проспект:</h4>
+                    <p class="day">Вторник:
+                        <p>19.00-20.30 младшая и средняя группа.</p>
+                        <p>20.30-22.00 старшая группа.</p>
+                    </p class="day">
+                    <p class="day">Четверг:
+                        <p>18.00-20.00 младшая и средняя группа.</p>
+                        <p>20.00-22.00 старшая группа.</p>
+                    </p class="day">
+                    <p class="day">Суббота:
+                        <p>11.30-12.45 младшая и
+                            средняя группа.</p>
+                        <p>12.45-14.00 старшая группа.</p>
+                    </p class="day">
+                </div>
+            </div>
+    
+        </div>
+        <div class="gallery">
+            <h2>Галерея</h2>
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="./img/gallery/photo-1.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="./img/gallery/photo-2.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="./img/gallery/photo-3.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="./img/gallery/photo-4.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="./img/gallery/photo-5.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="./img/gallery/photo-6.jpg" style="width:80%">
+                </div>
+    
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="./img/gallery/photo-6.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="./img/gallery/photo-7.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="./img/gallery/photo-8.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="./img/gallery/photo-9.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="./img/gallery/photo-10.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="./img/gallery/photo-11.jpg" style="width:80%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="./img/gallery/photo-12.jpg" style="width:80%">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+    
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+    
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-8.jpg" style="width:100%"
+                            onclick="currentSlide(8)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-9.jpg" style="width:100%"
+                            onclick="currentSlide(9)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-10.jpg" style="width:100%"
+                            onclick="currentSlide(10)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-11.jpg" style="width:100%"
+                            onclick="currentSlide(11)" alt="Lorem Ipsum">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery/photo-12.jpg" style="width:100%"
+                            onclick="currentSlide(12)" alt="Lorem Ipsum">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="contacts-maps">
+                <iframe
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1XNecFe9nOqIJR0lUWP9jypu5PJRcXVt5"
+                    frameborder=" 0" style="border:0;" allowfullscreen="1">
+                </iframe>
+            </div>
+            <div class="contacts-text">
+                <p>Адреса: <br>
+                    г. Киев, м. "Героев Днепра" ул. Северная 26 (сш № 245)<br><br>
+                    г. Киев, Оболонский проспект 9 Б. Школа 225.<br><br>
+                    г. Киев, Троещина, ул. Данькевича 5, школа 292; 2-й этаж<br><br>
+                    Контактые номера: +0509942493, 0673260236<br><br>
+                    Email: nikolaifomin639@gmail.com<br><br>
+                    <div class="social-buttons">
+                        <a href="https://www.facebook.com/arescombat.kiev.ua/" class="fa fa-facebook" target="_blank"></a>
+                        <a href="mailto:fominnikolaj25@gmail.com" class="fa fa-google" target="_blank"></a>
+                        <a href="https://t.me/Dzissen" class="fa fa-telegram" target="_blank"></a>
+                    </div>
                 </p>
-                <p class="day">Четверг:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Суббота:
-                    <p>10.00-12.00 младшая и
-                        средняя группа.</p>
-                    <p> 12.00-14.00 старшая группа.</p>
-                </p class="day">
             </div>
-            <div class="schedule-container-item">
-                <h4>Троещина:</h4>
-                <p class="day">Понедельник:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-                <p class="day">Среда:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-                <p class="day">Пятница:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-            </div>
-            <div class="schedule-container-item">
-                <h4>Оболонский проспект:</h4>
-                <p class="day">Вторник:
-                    <p>19.00-20.30 младшая и средняя группа.</p>
-                    <p>20.30-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Четверг:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Суббота:
-                    <p>11.30-12.45 младшая и
-                        средняя группа.</p>
-                    <p>12.45-14.00 старшая группа.</p>
-                </p class="day">
-            </div>
-        </div>
-
-    </div>
-    <div class="gallery">
-        <h1>Галерея</h1>
-        <div class="container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 12</div>
-                <img src="./img/gallery/photo-1.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 12</div>
-                <img src="./img/gallery/photo-2.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 12</div>
-                <img src="./img/gallery/photo-3.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 12</div>
-                <img src="./img/gallery/photo-4.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">5 / 12</div>
-                <img src="./img/gallery/photo-5.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 12</div>
-                <img src="./img/gallery/photo-6.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 12</div>
-                <img src="./img/gallery/photo-6.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">7 / 12</div>
-                <img src="./img/gallery/photo-7.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">8 / 12</div>
-                <img src="./img/gallery/photo-8.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">9 / 12</div>
-                <img src="./img/gallery/photo-9.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">10 / 12</div>
-                <img src="./img/gallery/photo-10.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">11 / 12</div>
-                <img src="./img/gallery/photo-11.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">12 / 12</div>
-                <img src="./img/gallery/photo-12.jpg" style="width:80%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-1.jpg" style="width:100%"
-                        onclick="currentSlide(1)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-2.jpg" style="width:100%"
-                        onclick="currentSlide(2)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-3.jpg" style="width:100%"
-                        onclick="currentSlide(3)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-4.jpg" style="width:100%"
-                        onclick="currentSlide(4)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-5.jpg" style="width:100%"
-                        onclick="currentSlide(5)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-6.jpg" style="width:100%"
-                        onclick="currentSlide(6)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-7.jpg" style="width:100%"
-                        onclick="currentSlide(7)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-8.jpg" style="width:100%"
-                        onclick="currentSlide(8)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-9.jpg" style="width:100%"
-                        onclick="currentSlide(9)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-10.jpg" style="width:100%"
-                        onclick="currentSlide(10)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-11.jpg" style="width:100%"
-                        onclick="currentSlide(11)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-12.jpg" style="width:100%"
-                        onclick="currentSlide(12)" alt="Lorem Ipsum">
-                </div>
+            <div class="footer">
+                © 2019 ARES CLUB KIEV
+                <p><a href="https://t.me/ruryks" target="_blank">Created by Ruryk</a></p>
             </div>
         </div>
     </div>
-    </div>
-    <div class="contacts">
-        <div class="contacts-maps">
-            <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=1XNecFe9nOqIJR0lUWP9jypu5PJRcXVt5"
-                frameborder=" 0" style="border:0;" allowfullscreen="1">
-            </iframe>
-        </div>
-        <div class="contacts-text">
-            <p>Адреса: <br>
-                г. Киев, м. "Героев Днепра" ул. Северная 26 (сш № 245)<br><br>
-                г. Киев, Оболонский проспект 9 Б. Школа 225.<br><br>
-                г. Киев, Троещина, ул. Данькевича 5, школа 292; 2-й этаж<br><br>
-                Контактые номера: +0509942493, 0673260236<br><br>
-                Email: nikolaifomin639@gmail.com<br><br>
-                <div class="social-buttons">
-                    <a href="https://www.facebook.com/arescombat.kiev.ua/" class="fa fa-facebook" target="_blank"></a>
-                    <a href="mailto:fominnikolaj25@gmail.com" class="fa fa-google" target="_blank"></a>
-                    <a href="https://t.me/Dzissen" class="fa fa-telegram" target="_blank"></a>
-                </div>
-            </p>
-        </div>
-        <div class="footer">
-            © 2019 ARES CLUB KIEV
-            <p><a href="https://t.me/ruryks" target="_blank">Created by Ruryk</a></p>
-        </div>
-    </div>
+        
+   
     <script src="./js/lightbox-plus-jquery.min.js"></script>
     <script src="./js/script.js" defer></script>
 </body>

@@ -6,7 +6,7 @@
   background-color: #fff;
   box-sizing: content-box ;
 }
-.cont-contact h1 {
+.cont-contact h2 {
   text-align: center;
   color: rgb(38,34,32);
   margin-top: 2%;
@@ -15,19 +15,19 @@
   text-align: center;
   color: rgb(38,34,32);
   margin-top: 1%;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .cont-contact .contact-form {
   padding: 0 10%;
-  margin-top: 3%;
+  margin-top: 1%;
   width: 80%;
 }
 .cont-contact .contact-form input,
 .cont-contact .contact-form textarea {
-  margin: 20px 0px;
+  margin: 10px 0px;
   border: 1px solid #808080;
-  font-size: 1vw;
+  font-size: 1.2vw;
   padding: 10px 0;
   text-transform: uppercase;
 }
@@ -42,16 +42,16 @@
 }
 .cont-contact .contact-form textarea {
   height: 10%;
-  padding-left: 3%;
+  padding-left: 1%;
   margin-bottom: 2%;
-  width: 94%;
+  width: 96%;
 }
 .cont-contact .contact-form input[type=submit] {
   background-color: #262220;
   border: none;
   color: #fff;
   text-align: center;
-  font-size: 0.7vw;
+  font-size: 1.2vw;
   padding: 2% 3% 2% 3%;
 }
 .cont-contact .contact-form input[type=submit]:hover {
