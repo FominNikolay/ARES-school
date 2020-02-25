@@ -94,7 +94,6 @@ $(document).ready(function () {
     });
 });
 
-
 // adoptive menu 
 function openmenufunc() {
     let adoptiveMenuBody = document.querySelector('#menuToggle');
