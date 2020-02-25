@@ -2,7 +2,8 @@
 @import 'gallery.css';
 @import 'contactform.css';
 @import 'modalwindow.css';
-@import url('https://fonts.googleapis.com/css?family=Gudea|Roboto|Roboto+Condensed|Roboto+Slab&display=swap');
+@import 'tooglemenu.css';
+@import url('https://fonts.googleapis.com/css?family=Gudea&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ a:link {
 a:visited{
     color: white;
 }
-a:hover{
+.footer a:hover, a:hover{
     color: red;
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
@@ -28,8 +29,9 @@ a:active{
     color: white;
 }
 .wrapper {
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: minmax(400px, -webkit-max-content);
     grid-template-rows: minmax(400px, max-content);
 }
@@ -49,14 +51,14 @@ a:active{
     background-color: rgba(30,30,30, 0.8);
     padding: 30px 20px;
 }
-.header ul {
+.header .menu ul {
     display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     list-style:none;
     -webkit-box-pack: space-evenly;
             justify-content: space-evenly;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 #header-phone{
@@ -78,16 +80,19 @@ a:active{
 .header .logo-text {
     width: 100%;
     text-align: center;
-    font-size: 1.7vw;
     padding-top: 10px;
 }
-.header .logo-text p {
+.header .logo-text h1 p{
     padding-top: 10px;
+    font-size: 2.5vw;
 }
 
 /*Section contact form*/
 .form {
     padding-bottom:2% ;
+}
+.form h2{
+    font-size: 2.5vw;
 }
 /*Section About*/
 
@@ -102,15 +107,16 @@ a:active{
     padding-bottom: 5%;
     box-sizing: content-box;
 }
-.about h1 {
+.about h2 {
     text-align: center;
-    margin: 50px 0px ;
+    margin: 30px 0px ;
+    font-size: 2.5vw;
 }
 .about-text {
     margin: 0% 10% 0% 10%;
 }
 .about-text p , .about-text ul{
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .about-text p{
     margin: 30px  0px ;
@@ -124,9 +130,10 @@ a:active{
     padding: 2em;
     box-sizing: content-box;
 }
-.section-masters h1 {
+.section-masters h2 {
     text-align: center;
     margin: 0.5em;
+    font-size: 2.5vw;
 }
 .masters {
     display: grid;
@@ -150,15 +157,16 @@ a:active{
             flex-direction: column;
             text-align: center;
 }
-.master h2 {
-    margin: 5% 0% 0% 0%;
+.master h3 {
+    margin: 3% 0% 0% 0%;
+    font-size: 2vw;
 }
 .master-content {
     display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
             align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 .master-content ul {  
     list-style: none;
@@ -175,11 +183,11 @@ a:active{
     background-blend-mode:multiply;
     background-color: rgba(30,30,30,0.9);
     padding: 20px;
-    font-size: 1.5vw;
 }
-.schedule h1 {
+.schedule h2 {
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0px; 
+    font-size: 2.5vw;
 }
 .schedule-container {
     padding: 10px;
@@ -214,10 +222,11 @@ a:active{
     color: rgb(38,34,32);
     box-sizing: content-box;
 }
-.gallery h1 {
+.gallery h2 {
     text-align: center;
     margin-bottom: 4%;
     color: rgb(38,34,32);
+    font-size:2.5vw;
 }
 .gallery .row {
     display: -webkit-box;
@@ -256,22 +265,21 @@ a:active{
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
-    font-size: 1vw;
+    font-size: 1.5vw;
     min-width: 200px;
 }
 .footer p {
     margin: 5% 0% 2% 0%;
-    font-size: 0.7vw;
+    font-size: 1.2vw;
 }
 /*Social buttons*/
 div.social-buttons {
     display: -webkit-box;
     display: flex;
-    padding-left: 10%;
 }
 .fa {
     padding: 1em;
-    font-size: 1.5vw;
+    font-size: 2vw;
     width: 7%;
     height: 7%;
     text-align: center;
@@ -337,32 +345,20 @@ div.social-buttons {
 @media (max-width: 1343px) {
     .up .up-button {
         font-size: 2vw;
-        width:10vw;
-    height: 10vw;
+        width:7vw;
+        height: 7vw;
     }
-    .header ul {
-       font-size: 1.8vw;
-    }
-    .header .logo-text {
-        font-size: 2.2vw;
-    }
-    .form h1 {
-        font-size: 3vw;
-    } 
-    .form .question p{
-        font-size: 2.2vw;
-    }
-    .cont-contact .contact-form input[type=submit] {
-        font-size: 1.5vw;
-      }
-    .about h1 {
+    .about h2 {
         font-size: 3vw;
         margin: 20px 0;
     }
     .about-text p , .about-text ul{
         font-size: 2.2vw;
     }
-    
+    .cont-contact .contact-form input,
+.cont-contact .contact-form textarea,input[type=submit] {
+  font-size: 1.5vw;
+    }
      .container-card {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -385,18 +381,18 @@ div.social-buttons {
         grid-template-columns: 1fr;
         box-sizing: content-box;
     }
-    .masters h1 {
-        font-size: 1em;
+    .section-masters h2{
+        font-size: 3vw;
     }
-    .masters h2{
-        font-size: 1em;
+    .masters h3{
+        font-size: 2.5vw;
         margin-top: 5%;
     }
     .masters ul {
-        font-size: 1em;
+        font-size: 2.5vw;
     }
     .master-content{
-        font-size: 0.7em;
+        font-size: 2.5vw;
         -webkit-box-pack: center;
                 justify-content: center;
     }
@@ -404,6 +400,10 @@ div.social-buttons {
         width: 30vw;
         height: auto;
     }
+    .schedule h2 {
+        font-size: 3vw;
+    }
+  
     .schedule-container-item {
         width: 70%;
         font-size: 2vw;
@@ -411,35 +411,68 @@ div.social-buttons {
     .gallery {
         padding: 20px 20px;
     }
-    .footer .contacts-text {
-        font-size: 2vw;
+    .gallery h2 {
+        font-size:3vw;
+    }
+    .fa {
+        padding: 1.2em;
+        font-size: 1.7vw;
+      }
+    .footer .contacts-text p {
+        font-size: 2.5vw;
     } 
 }
+@media (max-width: 1024px) {
+    #menuToggle{
+        display: flex;
+    }
+    .toogle{
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+}
 @media (max-width: 480px) {
-    .header .logo-text {
+    .header .logo-text h1 p{
+        font-size: 3vw;
+    }
+    #toogle-header-phone {
+        font-size: 4vw;
+    }
+    .cont-contact h2 {
+        font-size: 3vw;
+    }
+    .cont-contact p {
         font-size: 2.5vw;
     }
-    .about h1 {
+    .cont-contact .contact-form input,
+    .cont-contact .contact-form textarea{
+      font-size: 1.7vw;
+        }
+    .cont-contact .contact-form  input[type=submit] {
+            font-size: 2vw;
+    }
+    .about h2 {
         font-size: 3vw;
         margin: 20px 0;
     }
     .about-text p , .about-text ul{
-        font-size: 2.2vw;
+        font-size: 2.5vw;
     }
-    
      .container-card {
         display: grid;
         grid-template-columns: 1fr;
                 justify-items: center;
       } 
       .cards {
-        width: 50vw;
-        height: 60vw;
+        width: 60vw;
+        height: 70vw;
         cursor: pointer;
         margin-top: 5%;
       }
       .cards p {
-          font-size: 2vw;
+          font-size: 2.5vw;
       }
       .container-card div:nth-child(1){
         grid-column:1/3;
@@ -456,21 +489,37 @@ div.social-buttons {
     .cont-contact .contact-form textarea {
         width: 93%;
     }
+    .schedule-container-item h4{
+        font-size: 2.3vw;
+    }
+    .schedule-container-item p{
+        font-size: 2vw;
+    }
     .contacts {
         grid-template-columns: 1fr;
+        font-size: 2.5vw;
     }
     .footer { 
-        margin: 4% 0% 1% 0%;
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 2;
+        font-size: 2vw;
+    }
+    .footer p {
+        font-size: 1.5vw;
     }
     .contacts-maps iframe{
         width: 80vw;
         height: 50vw;
         margin-bottom: 5%;
     }
+    .fa {
+        padding: 1.5em;
+        font-size: 2.5vw;
+        width: 5%;
+        height: 5%;
+      }
     div.social-buttons {
         display: -webkit-box;
         display: flex;
@@ -478,5 +527,8 @@ div.social-buttons {
                 justify-content: center;
                 margin-top: 5%;
     }
+    .up .up-button {
+        width: 10vw;
+        height: 10vw;
 }
-
+}
