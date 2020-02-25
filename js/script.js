@@ -105,7 +105,8 @@ function closemenufunc() {
     let adoptiveMenuBody = document.querySelector('#menuToggle');
     adoptiveMenuBody.style.marginLeft = '-60vw';
 }
-window.onload = () => {
+window.onload = menuadoptive;
+function menuadoptive() {
     if (document.body.clientWidth < 1024) {
         let openmenu = document.querySelector('.open-menu-img');
         openmenu.addEventListener("click", openmenufunc);
