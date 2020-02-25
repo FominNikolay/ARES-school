@@ -1,0 +1,4 @@
+User-agent: *
+Dissalow:
+Host: arescombat.club
+Sitemap:http://arescombat.club/sitemap.xml
