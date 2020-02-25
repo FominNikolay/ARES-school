@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://arescombat.club/sitemap.xml">
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="
+            http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://arescombat.club/</loc>
    <image:image>
@@ -75,9 +80,10 @@
            <image:image>
       <image:loc>http://arescombat.club/img/openmenu.png</image:loc>
     </image:image>
-  <lastmod>2020-02-25T18:28:56+00:00</lastmod>
+  <lastmod>2020-02-25T22:08:58+01:00</lastmod>
   <changefreq>weekly</changefreq>
-  <priority>1.0000</priority>
+	<priority>1.0</priority>
+  
 </url>
 
 
