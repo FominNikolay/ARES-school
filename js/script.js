@@ -103,7 +103,7 @@ function openmenufunc() {
 }
 function closemenufunc() {
     let adoptiveMenuBody = document.querySelector('#menuToggle');
-    adoptiveMenuBody.style.marginLeft = '-40vw';
+    adoptiveMenuBody.style.marginLeft = '-60vw';
 }
 window.onload = () => {
     if (document.body.clientWidth < 1024) {
