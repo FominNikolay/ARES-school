@@ -120,4 +120,7 @@ function menuadoptive() {
         closemenufunc()
         $('body,html').animate({ scrollTop: top }, 1500);
     });
+    $(document).mouseup(function (e) {
+        closemenufunc()
+    });
 }

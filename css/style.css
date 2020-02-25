@@ -184,7 +184,7 @@ a:active{
     background-size: cover;
     color: white;
     background-blend-mode:soft-light;
-    background-color: rgba(30,30,30,0.9);
+    background-color: rgba(30,30,30,0.8);
     padding: 20px;
 }
 .schedule h2 {
@@ -434,6 +434,9 @@ div.social-buttons {
     }
     .menu {
         display: none;
+    }
+    #menu li{
+        font-size: 3vw;
     }
 }
 @media (max-width: 480px) {
