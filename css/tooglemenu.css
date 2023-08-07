@@ -1,0 +1,58 @@
+.toogle {
+    display: -webkit-box;
+    display: none;
+    -webkit-box-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+            align-items: baseline;
+}
+.toogle #toogle-header-phone span{
+    color: red;
+    font-size: 2.5vw;
+}
+.open-menu-img{
+    display: inline;
+}
+.open-menu-img img{
+    width: 4vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.close-menu-img{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 4vw;
+    height: auto;
+    cursor: pointer;
+}
+.close-menu-img img{
+    width: 4vw;
+    height: auto;
+}
+#menuToggle{
+    margin-left: -60vw;
+    width: 60vw;
+    height: 100%;
+    top: 0;
+    z-index: 100000000;
+    position: absolute;
+    position: fixed;
+    background-color: rgb(28,28,28);
+    display: -webkit-box;
+    display: none;
+   -webkit-box-pack: center;
+           justify-content: center;
+           -webkit-box-align: center;
+                   align-items: center;
+    -webkit-transition:all 1s ease-out;
+    -webkit-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out; ;
+}
+
+#menu li{
+    font-size: 2.5vw;
+    margin-top: 30px;
+    list-style: none;
+}

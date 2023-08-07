@@ -1,139 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="dPylxSWgoDMjtrmrXe6nCZ1ps1EpNTXo09igEx54uZg" />
+    <meta name="keywords"
+        content="боевые искусства киев,школа,спорт,обучение,джиу-джитсу,рукопашный бой, боевое самбо,клуб единоборств в киеве, бойові мистецтва київ,рукопашний бій, бойове самбо, клуб єдиноборств в києві, київ">
     <meta name="description"
-        content="Тренировки различных боевых искусств в Киеве | Рядом с метро  ➤ ARES combat club: Джиу Джитсу, Рукопашный бой, Боевое самбо! Записывайтесь к нам! В школе есть группы как для новичков, так и для опытных бойцов!">
-    <title>ARES - школа боевых искусств</title>
+        content="Тренування різних бойових мистецтв у Києві | Поруч із метро ➤ ARES combat club: Джиу-Джитсу, Рукопашний бій, Бойове самбо! Записуйтеся до нас! У школі є групи як для новачків, так і для досвідчених бійців!">
+    <title>ARES - школа бойових мистецтв!</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158275941-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158275941-1');
+    </script>
 </head>
 
 <body>
-    <div id="modalWindow">
-        <div class="modalWindowBody">
-            <h3 id="modalWindowContent">Lorem, ipsum.</h3>
-            <p>Нажмите "ОК" что бы закрыть окно</p>
-            <button id="closeModalWindow">OK</button>
-        </div>
-    </div>
-    <div class="up"><a href=".header"><button class="up-button"></button></a></div>
     <div class="wrapper">
         <div class="header">
-            <nav>
-                <ul>
-                    <a href=".header">
-                        <li>Главная</li>
+            <nav role="navigation">
+                <div class="toogle">
+                    <div class="open-menu-img"> <img src="./img/openmenu.png" alt="open menu button"></div>
+                    <a id="toogle-header-phone" href="tel:+380509942493">
+                        <span>+380509942493</span>
                     </a>
-                    <a href=".about">
-                        <li>О школе</li>
-                    </a>
-                    <a href=".about-cards">
-                        <li>Направления</li>
-                    </a>
-                    <a href=".schedule">
-                        <li>Расписание</li>
-                    </a>
-                    <a href=".section-masters">
-                        <li>Наши тренеры</li>
-                    </a>
-                    <a href=".gallery">
-                        <li>Галерея</li>
-                    </a>
-                    <a href=".contacts">
-                        <li>Контакты</li>
-                    </a>
-                    <a id="header-phone" href="tel:380509942493">
-                        <li>+380509942493</li>
-                    </a>
-                </ul>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <a href="#header">
+                            <li>Головна</li>
+                        </a>
+                        <a href="#about">
+                            <li>Про школу</li>
+                        </a>
+                        <a href="#about-cards">
+                            <li>Напрямки</li>
+                        </a>
+                        <a href="#schedule">
+                            <li>Розклад</li>
+                        </a>
+                        <a href="#section-masters">
+                            <li>Наші тренери</li>
+                        </a>
+<!--                         <a href="#gallery">
+                            <li>Галерея</li>
+                        </a> -->
+                        <a href="#contacts">
+                            <li>Контакти</li>
+                        </a>
+                        <a id="header-phone" href="tel:+380509942493">
+                            <span>
+                                <li>+380954516426</li>
+                            </span>
+                        </a>
+                    </ul>
+                </div>
             </nav>
-            <div class="logo">
+            <div id="header" class="logo">
                 <img src="./img/logo.png" alt="AresSchoolLogo">
                 <div class="logo-text">
-                    <p> ШКОЛА ЕДИНОБОРСТВ "АРЕС" </p>
-                    <p>ЛУЧШИЕ ЕДИНОБОРСТВА </p>
-                    <p>ФУНКЦИОНАЛЬНЫЙ ТРЕНИНГ</p>
-                    <p>ТРЕНИРУЙТЕСЬ С ЛУЧШИМИ - СТАНОВИТЕСЬ ЛУЧШИМИ!</p>
+                    <h1>
+                        <p>ШКОЛА ЄДИНОБОРСТВ "АРЕС"</p>
+                        <p>НАЙКРАЩІ ЄДИНОБОРСТВА</p>
+                        <p>ФУНКЦІОНАЛЬНИЙ ТРЕНІНГ</p>
+                        <p>ТРЕНУЙТЕСЯ З НАЙКРАЩИМИ - СТАВАЙТЕ НАЙКРАЩИМИ!</p>
+                    </h1>
                 </div>
             </div>
         </div>
-        <div class="form revealator-slideup">
+        <div class="form">
             <div class="cont-contact">
                 <div class="question">
-                    <h1>Вы хотите, чтобы мы связались с Вами?</h1>
-                    <p>Просто отправьте нам запрос, и мы Вам перезвоним</p>
+                    <h2>Ви хочете, щоб ми зв'язалися з Вами?</h2>
+                    <p>Просто надішліть нам запит, і ми Вам передзвонимо</p>
                 </div>
                 <div class="contact-form">
-                    <input id="name" class="gutter" type="text" placeholder="Имя">
-                    <input id="lastName" type="text" placeholder="Фамилия">
+                    <input id="name" class="gutter" type="text" placeholder="Ім'я">
+                    <input id="lastName" type="text" placeholder="Прізвище">
                     <input id="phone" class="gutter" type="text" placeholder="Телефон">
                     <input id="email" type="text" placeholder="Email">
-                    <textarea id="userQuestion" name="" id="" placeholder="Ваше сообщение"></textarea id="submit_btn">
-                    <input id="submit_btn" type="submit" value="Отправить">
+                    <textarea id="userQuestion" name="textarea" placeholder="Ваше повідомлення"></textarea>
+                    <input id="submit_btn" type="submit" value="Відправити">
                 </div>
             </div>
         </div>
-        <div class="about revealator-slideup">
+        <div id="about" class="about">
             <div class="about-content">
-                <h1>
-                    О нашей школе:
-                </h1>
+                <h2>
+                   Про нашу школу:
+                </h2>
                 <div class="about-text">
                     <p>
-                        КЛУБ ЕДИНОБОРСТВ ARES В КИЕВЕ. <br>
-                        Почему люди начинают заниматься спортом? Одни просто хотят прийти в хорошую физическую
+                        КЛУБ ЄДИНОБОРСТВ ARES У КИЄВІ. <br>
+                        Чому люди починають займатися спортом? Одні просто хочуть прийти в гарну фізичну
                         форму, а
-                        другие мечтают стать чемпионами. В нашем клубе боевых искусств каждый достигнет своих целей!
-                        Мы
-                        рады
-                        видеть на наших тренировках по единоборствам и тех, кто одержим желанием достичь вершины
-                        Олимпа,
+                        інші мріють стати чемпіонами. У нашому клубі бойових мистецтв кожен досягне своїх цілей!
+                        Ми
+                        раді
+                        бачити на наших тренуваннях з єдиноборств і тих, хто одержимий бажанням досягти вершини
+                        Олімпу,
                         и
-                        тех, кто желает просто выплеснуть скопившийся за день негатив и обрести красивое тело.
+                        тих, хто бажає просто виплеснути негатив, що накопичився за день, і знайти гарне тіло.
                     </p>
                     <p>
-                        Для Вас работают три клуба ARES:<br>
-                        Школа боевых искусств ARES на Данькевича (Троещина) – находится в городе Киев на Троещине, на
-                        улице Данькевича 5, школа №292 - 2-й этаж.
+                        Для Вас працює клуб ARES:<br>
+                        Школа бойових мистецтв ARES на Південній Борщагівці - знаходиться в місті Київ на вул. Симиренка 5б, 2-й поверх, зал КАРАТЕ.
                     </p>
-                    <p>
-                        Школа боевых искусств ARES на Оболони– находится в городе Киев рядом со станциями
-                        метро Оболонь и Минская на Оболонском проспекте 9Б, школа №225. Клуб идеально подходит для
-                        посещения людям
-                        живущих или работающих в близь лежащих районах.
-                    </p>
-                    <p>Все клубы идеально подходит для посещения людям живущих или работающих в близь лежащих районах
-                        возле мест разположения клубов.</p>
-                    <p> Мы предлагаем:
+                    <p>Клуб ідеально підходить для відвідування людям, які живуть або працюють у близь лежачих районах.</p>
+                    <p>Ми пропонуємо:
                     </p>
                     <ul>
-                        <li> Лучших профессиональных тренеровы по боевым искусствам;</li>
-                        <li> Просторные светлые спортивные залы;</li>
-                        <li> Пробное занятие (70грн);</li>
-                        <li> Удобный график тренировок и месторасположение залов;</li>
-                        <li> Недорогие занятия (600грн - во всех залах);</li>
-                        <li> Групповые и индивидуальные занятия боевыми искусствами для взрослых и детей, для девушек
-                            и мужчин,для начинающих и продолжающих.</li>
+                        <li> Найкращих професійних тренерів з бойових мистецтв;</li>
+                        <li> Просторі світлі світлі спортивні зали;</li>
+                        <li> Пробне заняття (100грн);</li>
+                        <li> Зручний графік тренувань і місце розташування залів;</li>
+                        <li> Недорогі заняття (місяць - 700грн, у всіх залах);</li>
+                        <li> Групові та індивідуальні заняття бойовими мистецтвами для дорослих і дітей, для дівчат і чоловіків, для початківців і тих, хто продовжує.</li>
                     </ul>
-                    <p>Для гармоничного развития ребенка как нельзя лучше подходят занятия боевыми единоборствами.
-                        Они
-                        не только помогают развиваться физически, но и формируют характер, вырабатывая такие
-                        качества
-                        как целеустремленность, сдержанность, решительность и уверенность в себе.
+                    <p>Для гармонійного розвитку дитини якнайкраще підходять заняття бойовими єдиноборствами.
+                        Вони
+                        не тільки допомагають розвиватися фізично, а й формують характер, виробляючи такі
+                        якості
+                        як цілеспрямованість, стриманість, рішучість і впевненість у собі.
                     </p>
                 </div>
             </div>
-            <div class="about-cards">
-                <h1>
-                    Записаться в секции можно по следующим направлениям:
-                </h1>
+            <div id="about-cards" class="about-cards">
+                <h2>
+                   Записатися в секції можна за такими напрямами:
+                </h2>
                 <div class="container-card">
                     <div class="cards bg1">
                         <div class="overlay">
@@ -142,10 +149,10 @@
                                 <hr>
                             </div>
                             <div class="items cart-text">
-                                <p>— общее название, применяемое для японских боевых искусств, включающих в
-                                    себя техники работы с оружием и без него; искусство рукопашного боя. Основной
-                                    принцип джиу-джитсу - «мягкая», «податливая» техника движений — «не идти на
-                                    прямое противостояние, чтобы победить», обратить силу и действия врага против него
+                                <p>— загальна назва, що застосовується для японських бойових мистецтв, які включають у себе техніки роботи зі зброєю.
+                                    себе техніки роботи зі зброєю і без неї; мистецтво рукопашного бою. Основний
+                                    принцип джиу-джитсу - "м'яка", "податлива" техніка рухів - "не йти на
+                                    пряме протистояння, щоб перемогти", звернути силу і дії ворога проти нього
                                     самого.</p>
                             </div>
                         </div>
@@ -153,30 +160,30 @@
                     <div class="cards bg2">
                         <div class="overlay">
                             <div class="items head">
-                                <p>Боевое Самбо</p>
+                                <p>Карате</p>
                                 <hr>
                             </div>
                             <div class="items cart-text">
-                                <p>— не только вид спортивного единоборства и система противодействия противнику
-                                    без применения оружия, но и система воспитания, способствует развитию
-                                    морально-волевых качеств, формирует твердый характер, стойкость и выносливость.
-                                    Самбо включает наиболее эффективные приемы и тактику различных видов спортивных
-                                    единоборств.</p>
+                                <p>— це не просто бойове мистецтво, це життєвий шлях, у якому людина
+                                займається зміцненням свого тіла і духу, розширюючи межі своїх можливостей.
+                                Навчання карате - це не тільки вивчення технік правильного нанесення ударів, а й особливий спосіб життя,
+                                в якому людина починає відстежувати взаємозв'язок у всьому, що бачить навколо себе, і прагне досягти
+                                гармонії з природою.</p>
                             </div>
                         </div>
                     </div>
                     <div class="cards bg3">
                         <div class="overlay">
                             <div class="items head">
-                                <p>Рукопашный бой</p>
+                                <p>Рукопашний бій</p>
                                 <hr>
                             </div>
                             <div class="items cart-text">
-                                <p>— рациональное применение грубой физической силы с использованием
-                                    специальных приёмов борьбы, ударной техники. Спортивное единоборство, обычно
-                                    рассматриваемое как
-                                    часть системы подготовки бойцов
-                                    армии и различных силовых структур.</p>
+                                <p>— раціональне застосування грубої фізичної сили з використанням
+                                    спеціальних прийомів боротьби, ударної техніки. Спортивне єдиноборство, яке зазвичай
+                                    розглядається як
+                                    частина системи підготовки бійців
+                                    армії та різних силових структур.</p>
                             </div>
                         </div>
                     </div>
@@ -184,243 +191,227 @@
 
             </div>
         </div>
-        <div class="section-masters">
-            <h1>Наши Тренеры</h1>
+        <div id="section-masters" class="section-masters">
+            <h2>Наш Тренер</h2>
             <div class="masters">
                 <div class="master">
-                    <h2>Фомин Николай Борисович</h2><br>
+                    <h3>Фомін Микола Борисович</h3><br>
                     <div class="master-content">
-                        <img src="./img/Fomin.jpeg" alt="Fomin Nikolay">
+                        <img src="./img/Fomin.jpeg" alt="Fomin Nikolay photo master">
                         <ul>
-                            <li>КМС по самбо СССР</li>
-                            <li>1-й дан по Рукопашному бою Украина</li>
-                            <li>3-й дан Джиу Джитсу IBF</li>
-                            <li>3-й дан Джиу Джитсу WMAO</li>
-                            <li>6-й дан Джиу Джитсу WUMAF</li>
-                            <li>Контактный номер:
-                                050 994 24 93</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="master">
-                    <h2>Иванов Олег Анатольевич</h2><br>
-                    <div class="master-content">
-                        <img src="./img/ivanov.jpg" alt="Ivanov Oleg">
-                        <ul>
-                            <li>2-й дан Джиу Джитсу WUMAF</li>
-                            <li>Контактный номер:
-                                067 326 02 36</li>
+                            <li>Рукопашний бій</li>
+                            <li>Джиу Джитсу</li>
+                            <li>Карате Джитсу</li>
+                            <li>Самозахист</li>
+                            <li>Контактний номер:</li>
+                            <li>095 451 64 26</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="schedule">
-        <h1>Расписание</h1>
-        <div class="schedule-container">
-            <div class="schedule-container-item">
-                <h4>Героев Днепра:</h4>
-                <p class="day">Вторник:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
-                </p>
-                <p class="day">Четверг:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Суббота:
-                    <p>10.00-12.00 младшая и
-                        средняя группа.</p>
-                    <p> 12.00-14.00 старшая группа.</p>
-                </p class="day">
-            </div>
-            <div class="schedule-container-item">
-                <h4>Троещина:</h4>
-                <p class="day">Понедельник:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-                <p class="day">Среда:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-                <p class="day">Пятница:
-                    <p>17.00-18.30 младшая группа.</p>
-                    <p>18.30-20.00 средняя группа.</p>
-                    <p>20.00-21.30 старшая группа.</p>
-                </p class="day">
-            </div>
-            <div class="schedule-container-item">
-                <h4>Оболонский проспект:</h4>
-                <p class="day">Вторник:
-                    <p>19.00-20.30 младшая и средняя группа.</p>
-                    <p>20.30-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Четверг:
-                    <p>18.00-20.00 младшая и средняя группа.</p>
-                    <p>20.00-22.00 старшая группа.</p>
-                </p class="day">
-                <p class="day">Суббота:
-                    <p>11.30-12.45 младшая и
-                        средняя группа.</p>
-                    <p>12.45-14.00 старшая группа.</p>
-                </p class="day">
-            </div>
-        </div>
-
-    </div>
-    <div class="gallery">
-        <h1>Галерея</h1>
-        <div class="container">
-            <div class="mySlides">
-                <div class="numbertext">1 / 12</div>
-                <img src="./img/gallery/photo-1.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">2 / 12</div>
-                <img src="./img/gallery/photo-2.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">3 / 12</div>
-                <img src="./img/gallery/photo-3.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">4 / 12</div>
-                <img src="./img/gallery/photo-4.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">5 / 12</div>
-                <img src="./img/gallery/photo-5.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 12</div>
-                <img src="./img/gallery/photo-6.jpg" style="width:80%">
-            </div>
-
-            <div class="mySlides">
-                <div class="numbertext">6 / 12</div>
-                <img src="./img/gallery/photo-6.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">7 / 12</div>
-                <img src="./img/gallery/photo-7.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">8 / 12</div>
-                <img src="./img/gallery/photo-8.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">9 / 12</div>
-                <img src="./img/gallery/photo-9.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">10 / 12</div>
-                <img src="./img/gallery/photo-10.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">11 / 12</div>
-                <img src="./img/gallery/photo-11.jpg" style="width:80%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">12 / 12</div>
-                <img src="./img/gallery/photo-12.jpg" style="width:80%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-
-            <div class="row">
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-1.jpg" style="width:100%"
-                        onclick="currentSlide(1)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-2.jpg" style="width:100%"
-                        onclick="currentSlide(2)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-3.jpg" style="width:100%"
-                        onclick="currentSlide(3)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-4.jpg" style="width:100%"
-                        onclick="currentSlide(4)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-5.jpg" style="width:100%"
-                        onclick="currentSlide(5)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-6.jpg" style="width:100%"
-                        onclick="currentSlide(6)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-7.jpg" style="width:100%"
-                        onclick="currentSlide(7)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-8.jpg" style="width:100%"
-                        onclick="currentSlide(8)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-9.jpg" style="width:100%"
-                        onclick="currentSlide(9)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-10.jpg" style="width:100%"
-                        onclick="currentSlide(10)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-11.jpg" style="width:100%"
-                        onclick="currentSlide(11)" alt="Lorem Ipsum">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="./img/gallery/photo-12.jpg" style="width:100%"
-                        onclick="currentSlide(12)" alt="Lorem Ipsum">
+        <div id="schedule" class="schedule">
+            <h2>Розклад</h2>
+            <div class="schedule-container">
+                <div class="schedule-container-item">
+                    <h4>Південна Борщагівка:</h4>
+                    <p class="day">Понеділок:
+                    <p>16.30-18.00 молодша група.</p>
+                    <p>18.00-19.30 середня група.</p>
+                    </p class="day">
+                    <p class="day">Середа:
+                    <p>16.30-18.00 молодша група.</p>
+                    <p>18.00-19.30 середня група.</p>
+                    </p class="day">
+                    <p class="day">П'ятниця:
+                    <p>16.30-18.00 молодша група.</p>
+                    <p>18.00-19.30 середня група.</p>
+                    </p class="day">
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    <div class="contacts">
-        <div class="contacts-maps">
-            <iframe
-                src="https://www.google.com/maps/d/u/0/embed?mid=1XNecFe9nOqIJR0lUWP9jypu5PJRcXVt5"
-                frameborder=" 0" style="border:0;" allowfullscreen="1">
-            </iframe>
-        </div>
-        <div class="contacts-text">
-            <p>Адреса: <br>
-                г. Киев, Оболонский проспект 9 Б. Школа 225.<br><br>
-                г. Киев, Троещина, ул. Данькевича 5, школа 292; 2-й этаж<br><br>
-                Контактые номера: +0509942493, 0673260236<br><br>
-                Email: nikolaifomin639@gmail.com<br><br>
+<!--        <div class="gallery">-->
+<!--            <h2>Галерея</h2>-->
+<!--            <div class="container">-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">1 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-1.jpg" alt="jiu-jitsu training photo 1" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">2 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-2.jpg" alt="jiu-jitsu training photo 2" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">3 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-3.jpg" alt="jiu-jitsu training photo 3" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">4 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-4.jpg" alt="jiu-jitsu training photo 4" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">5 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-5.jpg" alt="jiu-jitsu training photo 5" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">6 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-6.jpg" alt="jiu-jitsu training photo 6" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">7 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-6.jpg" alt="jiu-jitsu training photo 7" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">8 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-7.jpg" alt="jiu-jitsu training photo 8" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">9 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-8.jpg" alt="jiu-jitsu training photo 9" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">10 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-9.jpg" alt="jiu-jitsu training photo 10" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">11 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-10.jpg" alt="jiu-jitsu training photo 11" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">12 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-11.jpg" alt="jiu-jitsu training photo 12" style="width:80%">-->
+<!--                </div>-->
+<!--                <div class="mySlides">-->
+<!--                    <div class="numbertext">13 / 13</div>-->
+<!--                    <img src="./img/gallery/photo-12.jpg" alt="jiu-jitsu training photo 13" style="width:80%">-->
+<!--                </div>-->
+
+<!--                <a class="prev" onclick="plusSlides(-1)">❮</a>-->
+<!--                <a class="next" onclick="plusSlides(1)">❯</a>-->
+
+<!--                <div class="caption-container">-->
+<!--                    <p id="caption"></p>-->
+<!--                </div>-->
+
+<!--                <div class="row">-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-1.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(1)" alt="jiu-jitsu training photo 1">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-2.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(2)" alt="jiu-jitsu training photo 2">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-3.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(3)" alt="jiu-jitsu training photo 3">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-4.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(4)" alt="jiu-jitsu training photo 4">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-5.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(5)" alt="jiu-jitsu training photo 5">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-6.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(6)" alt="jiu-jitsu training photo 6">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-7.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(7)" alt="jiu-jitsu training photo 7">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-8.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(8)" alt="jiu-jitsu training photo 8">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-9.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(9)" alt="jiu-jitsu training photo 9">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-10.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(10)" alt="jiu-jitsu training photo 10">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-11.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(11)" alt="jiu-jitsu training photo 11">-->
+<!--                    </div>-->
+<!--                    <div class="column">-->
+<!--                        <img class="demo cursor" src="./img/gallery/photo-12.jpg" style="width:100%"-->
+<!--                            onclick="currentSlide(12)" alt="jiu-jitsu training photo 12">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div id="contacts" class="contacts">
+            <div class="contacts-maps">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1XNecFe9nOqIJR0lUWP9jypu5PJRcXVt5"
+                    frameborder=" 0" style="border:0;" allowfullscreen="1">
+                </iframe>
+            </div>
+            <div class="contacts-text">
+                <div class="adress">
+                    <p>Адреси:</p>
+                    <p> г. Київ, Південна Борщагівка, вул. Симиренка 5б, 2-й поверх, зал КАРАТЕ </p>
+                    <p></p>Контактний номер: 0954516426</p>
+                    <p> Email: nikolaifomin639@gmail.com </p>
+                </div>
                 <div class="social-buttons">
                     <a href="https://www.facebook.com/arescombat.kiev.ua/" class="fa fa-facebook" target="_blank"></a>
                     <a href="mailto:fominnikolaj25@gmail.com" class="fa fa-google" target="_blank"></a>
                     <a href="https://t.me/Dzissen" class="fa fa-telegram" target="_blank"></a>
                 </div>
-            </p>
-        </div>
-        <div class="footer">
-            © 2019 ARES CLUB KIEV
-            <p><a href="https://t.me/ruryks" target="_blank">Created by Ruryk</a></p>
+                </p>
+            </div>
+            <div class="footer">
+                © 2019 ARES CLUB KIEV
+            </div>
         </div>
     </div>
+    <div id="modalWindow">
+        <div class="modalWindowBody">
+            <h3 id="modalWindowContent">Увага!</h3>
+            <p>Натисніть "ОК" щоб закрити вікно</p>
+            <button id="closeModalWindow">Ок</button>
+        </div>
+    </div>
+    <div class="up"><a href="#header"><button class="up-button"></button></a></div>
+    <div id="menuToggle">
+        <div class="close-menu-img"><img src="./img/closemenu.png" alt="close menu button"></div>
+        <ul id="menu">
+            <a href="#header">
+                <li>Головна</li>
+            </a>
+            <a href="#about">
+                <li>Про школу</li>
+            </a>
+            <a href="#about-cards">
+                <li>Напрямки</li>
+            </a>
+            <a href="#schedule">
+                <li>Розклад</li>
+            </a>
+            <a href="#section-masters">
+                <li>Наші тренери</li>
+            </a>
+            <a href="#gallery">
+                <li>Галерея</li>
+            </a>
+            <a href="#contacts">
+                <li>Контакти</li>
+            </a>
+        </ul>
+    </div>
     <script src="./js/lightbox-plus-jquery.min.js"></script>
-    <script src="./js/script.js" defer></script>
+    <script src="./js/script.min.js" defer></script>
 </body>
 
 </html>

@@ -78,9 +78,6 @@ function closeModal() {
 }
 
 
-// section animaton
-
-
 // Smooth transition
 $(document).ready(function () {
     $("nav").on("click", "a", function (event) {
@@ -97,3 +94,32 @@ $(document).ready(function () {
     });
 });
 
+// adoptive menu 
+function openmenufunc() {
+    let adoptiveMenuBody = document.querySelector('#menuToggle');
+    adoptiveMenuBody.style.marginLeft = '0vw';
+
+}
+function closemenufunc() {
+    let adoptiveMenuBody = document.querySelector('#menuToggle');
+    adoptiveMenuBody.style.marginLeft = '-60vw';
+}
+window.onload = menuadoptive;
+function menuadoptive() {
+    if (document.body.clientWidth < 1024) {
+        let openmenu = document.querySelector('.open-menu-img');
+        openmenu.addEventListener("click", openmenufunc);
+        let closemenu = document.querySelector('.close-menu-img');
+        closemenu.addEventListener("click", closemenufunc);
+    }
+    $("#menu").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        closemenufunc()
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
+    $(document).mouseup(function (e) {
+        closemenufunc()
+    });
+}

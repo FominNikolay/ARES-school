@@ -16,7 +16,7 @@
   background-repeat: no-repeat;
 }
 .bg2 {
-  background: url("../img/sambo.jpg");
+  background: url("../img/karate.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -47,7 +47,7 @@
 
 .head {
   margin-top: 5%;
-  font-size: 1.5vw;
+  font-size: 2vw;
   -webkit-transform: translateY(40px);
           transform: translateY(40px);
   -webkit-transition: all 0.7s;
