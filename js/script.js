@@ -1,6 +1,6 @@
-// section gallery 
-var slideIndex = 1;
-showSlides(slideIndex);
+// section gallery
+let slideIndex = 1;
+// showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -11,27 +11,33 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("demo");
+    const captionText = document.getElementById("caption");
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
+
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
-// section form 
+// section form
 //              Telegram bot
-var submit = document.querySelector('#submit_btn');
+const submit = document.querySelector('#submit_btn');
 submit.addEventListener('click', sendForm);
+
 function sendForm() {
     let name = document.querySelector('#name').value;
     let lastName = document.querySelector('#lastName').value;
@@ -51,6 +57,7 @@ function sendForm() {
             modalWindowContent.innerHTML = "Запрос был успешно отправлен!";
             modalWindow.style.display = "flex";
             setTimeout(showModalWindow, 1000);
+
             function showModalWindow() {
                 modalWindow.style.opacity = 1;
             }
@@ -58,16 +65,18 @@ function sendForm() {
             modalWindowContent.innerHTML = "Запрос не был отправлен! Пожалуйста проверьте ваше подключение к интернету!";
             modalWindow.style.display = "flex";
             setTimeout(showModalWindow, 1000);
+
             function showModalWindow() {
                 modalWindow.style.opacity = 1;
             }
+
             let closeModalWindow = document.getElementById('closeModalWindow');
             closeModalWindow.addEventListener('click', closeModal);
         }
     };
     xhttp.open("GET", url + `С Вами хочет связаться новый клиент. Его Имя: ${name}, Фамилия: ${lastName}, Телефон: ${phone}, Email: ${email}. Его вопрос : "${userQuestion}". Пожалуйста свяжитесь с ним.`, true);
     xhttp.send();
-};
+}
 
 function closeModal() {
     modalWindowContent = document.getElementById("modalWindowContent");
@@ -82,29 +91,32 @@ function closeModal() {
 $(document).ready(function () {
     $("nav").on("click", "a", function (event) {
         event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
+        const id = $(this).attr('href'),
+            top = $(`${id}`).offset().top;
         $('body,html').animate({ scrollTop: top }, 1500);
     });
     $(".up").on("click", "a", function (event) {
         event.preventDefault();
-        var id = $(this).attr('href'),
-            top = $(id).offset().top;
+        const id = $(this).attr('href'),
+            top = $(`${id}`).offset().top;
         $('body,html').animate({ scrollTop: top }, 1500);
     });
 });
 
-// adoptive menu 
+// adoptive menu
 function openmenufunc() {
     let adoptiveMenuBody = document.querySelector('#menuToggle');
     adoptiveMenuBody.style.marginLeft = '0vw';
 
 }
+
 function closemenufunc() {
     let adoptiveMenuBody = document.querySelector('#menuToggle');
     adoptiveMenuBody.style.marginLeft = '-60vw';
 }
+
 window.onload = menuadoptive;
+
 function menuadoptive() {
     if (document.body.clientWidth < 1024) {
         let openmenu = document.querySelector('.open-menu-img');
